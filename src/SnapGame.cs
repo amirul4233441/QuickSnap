@@ -24,7 +24,7 @@ namespace CardGames
 
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
 			{
-				myGame.FlipNextCard ();
+				myGame.Start ();
 			}
 		}
 
@@ -35,7 +35,6 @@ namespace CardGames
 		private static void DrawGame(Snap myGame)
 		{
 			SwinGame.DrawBitmap ("cardsBoard.png", 0, 0);
-			//SwinGame.ClearScreen(Color.White);
 
 			// Draw the top card
 			Card top = myGame.TopCard;
